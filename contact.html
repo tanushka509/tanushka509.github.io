@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact</title>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="heading">
+                  <li><a href="protfolio.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>CONTACT FORM</h1>
+            <p>fill the details:</p>
+        </header>
+        <main>
+            <form id="contactform">
+                <div class="box">
+                <label for="name">NAME:</label><br><br>
+                <input type="text" placeholder="Enter Your Name" id="name" required><br><br>
+                
+                 <div class="error" id="nameerror"></div>
+                 </div>
+                <div class="box">
+                <label for="email">E-mail Address:</label><br><br>
+                <input type="email" placeholder="Enter your E-mail Address" id="email"><br><br>
+                </div>
+                <div class="box">
+                <label for="message">Type a Message:</label><br><br>
+                <textarea name="message" id="message"></textarea><br><br>
+                
+                <div class="error" id="messagerror"></div>
+                </div>
+                <input type="submit" value="send">
+                
+            </form>
+        </main>
+        <div>
+            <img src="Vector.png" alt="yellow">
+        </div>
+        <footer>
+            <ul>
+                <li><a href="https://www.instagram.com/tanu_shkadas?igsh=NDFjMzFoMG94aWp5"><img src="ph_instagram-logo-fill.png" alt="insta"></a></li>
+                <li><a href="https://in.linkedin.com/in/tanushka-das-4b3b9735b?trk=people-guest_people_search-card"><img src="bi_linkedin.png" alt="linked"></a></li>
+                <li><a href="mailto:dastanushka06@gmail.com"><img src="bi_envelope-fill.png" alt="mail"></a></li>
+            </ul>
+            <span>these are my social media handels:</span>
+        </footer>
+        <script>
+            document.getElementById('contactform').addEventListener('submit' , function(e){
+                e.preventDefault();
+            let valid=true;
+            let name=document.getElementById('name').value.trim();
+            let message=document.getElementById('message').value.trim();
+
+            document.getElementById('nameerror').textContent="";
+            document.getElementById('messagerror').textContent="";
+
+            if(name.length<2){
+                document.getElementById('nameerror').textContent="Please enter more than two characters!";
+                valid=false;
+            }
+            if(message.length<10){
+                document.getElementById('messagerror').textContent='kindly type more than 10 charaters!';
+                valid=false;
+            }
+            if(valid){
+                alert('message sent succesfully');
+                document.getElementById('contactform').reset();
+            }
+        });
+
+            
+        </script>
+    </body>
+</html>
