@@ -1,0 +1,99 @@
+.container {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+          font-family: Arial, sans-serif;
+        }
+
+        h1 {
+          text-align: center;
+          color: #333;
+        }
+
+        .form-box {
+          background: #f0f0f0;
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 5px;
+        }
+
+        .input-group {
+          margin-bottom: 15px;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        input, select {
+            box-sizing: border-box;
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          font-size: 16px;
+        }
+
+        .add-btn {
+          background: #4CAF50;
+          color: white;
+          padding: 12px 24px;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+
+        .add-btn:hover {
+          background: #45a049;
+        }
+
+        .total-box {
+          background: #e3f2fd;
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 5px;
+          text-align: center;
+        }
+
+        .total-box h2 {
+          margin: 0;
+          color: #1976d2;
+        }
+
+        .total-box p {
+          margin: 10px 0 0 0;
+          color: #666;
+        }
+
+        .expenses-list {
+          background: white;
+          padding: 20px;
+          border-radius: 5px;
+          border: 1px solid #ddd;
+        }
+
+        .expense-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px;
+          margin-bottom: 10px;
+          background: #f9f9f9;
+          border-radius: 3px;
+        }
+
+        .delete-btn {
+          background: #f44336;
+          color: white;
+          padding: 8px 16px;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+
+        .delete-btn:hover {
+          background: #da190b;
+        }
